@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Student</h1>
+        <button id="check-attendance">Check Attendance</button>
+        <button id="check-grades">Check Grades</button>
+        <button id="check-timetable">Check Timetable</button>
+        <button id="logout">Logout</button>
+    </div>
+
+    <div id="attendance-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-attendance" class="close">&times;</span>
+            <h2>Your Attendance</h2>
+            <p>Attendance: 85%</p>
+        </div>
+    </div>
+
+    <div id="grades-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-grades" class="close">&times;</span>
+            <h2>Your Grades</h2>
+            <p>Math: A</p>
+            <p>Science: B</p>
+        </div>
+    </div>
+
+    <div id="timetable-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-timetable" class="close">&times;</span>
+            <h2>Your Timetable</h2>
+            <p>Monday: Math, Science</p>
+            <p>Tuesday: English, History</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

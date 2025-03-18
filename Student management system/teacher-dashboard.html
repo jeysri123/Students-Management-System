@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Teacher</h1>
+        <button id="update-attendance">Update Attendance</button>
+        <button id="update-grades">Update Grades</button>
+        <button id="logout">Logout</button>
+    </div>
+
+    <div id="update-attendance-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-update-attendance" class="close">&times;</span>
+            <h2>Update Attendance</h2>
+            <form id="attendance-form">
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" required>
+                <label for="attendance-status">Attendance Status:</label>
+                <select id="attendance-status" required>
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                </select>
+                <button type="submit">Update Attendance</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="update-grades-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-update-grades" class="close">&times;</span>
+            <h2>Update Grades</h2>
+            <form id="grades-form">
+                <label for="student-id-grade">Student ID:</label>
+                <input type="text" id="student-id-grade" required>
+                <label for="new-grade">New Grade:</label>
+                <input type="text" id="new-grade" required>
+                <button type="submit">Update Grade</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
